@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primary-dark:hsl(242, 100%, 50%);
+    --primary-light:#003ec3;
+}
+@layer base{
+    .icon{
+        color: var(--primary-dark)
+    }
+    body{
+        @apply font-[Poppins]
+    }
+    li{
+       @apply px-4;
+    }
+    h1{
+        @apply text-3xl md:text-4xl font-bold py-4
+    }
+    h2{
+        @apply text-3xl font-bold py-4 pb-4
+    }
+    h3{
+        @apply text-xl  font-bold
+    }
+    button{
+        @apply my-2 from-blue-700  border rounded-md py-1 bg-gradient-to-r  to-[var(--primary-light)] text-white
+    }
+    .icon{
+        @apply text-2xl cursor-pointer mr-20
+    }
+ 
+}       
